@@ -1,0 +1,2 @@
+# easySetupMingw
+まだプログラミングを始めたばかりでどうしてもWindowsでMingw gccの環境構築できない場合に役に立つツールかも??
