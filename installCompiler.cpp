@@ -9,7 +9,7 @@ void installCompiler(const size_t* choice){
             system("choco install -y mingw");
             break;
         case 2:
-            system("choco install -y msys2のみ");
+            system("choco install -y msys2");
             break;
         default:
             std::cout  << "プログラムを終了します。" << std::endl;
