@@ -3,16 +3,14 @@
 #include <string>
 
 int main(void){
-    std::cout << "gccã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãŸã‚ã«å¿…è¦ãªãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚" << std::endl;
-    system("start powershell \"Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager/::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(\'https://chocolatey.org/install.ps1\'))\"");
-    std::cout << "OK." << std::endl;
-    std::cout << "gccã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚" << std::endl;
-    system("choco install mingw");
+    std::cout << "gcc‚ÌƒCƒ“ƒXƒg[ƒ‹‚É•K—v‚ÈƒvƒƒOƒ‰ƒ€‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¢‚Ü‚·B" << std::endl;
+    system("@\"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command \"[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))\" && SET \"PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\bin\"");
 
-    std::cout << "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒå®Œäº†ã—ã¾ã—ãŸ!" << std::endl;
-    std::cout << "ä¸€åº¦ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’çµ‚äº†ã—ã¦ã€ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’é–‹ãã€gccã‚³ãƒžãƒ³ãƒ‰ãŒå‹•ä½œã™ã‚‹ã‹ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚" << std::endl;
-    std::cout << "enterã‚­ãƒ¼ã‚’æŠ¼ã™ã¨çµ‚äº†ã—ã¾ã™" << std::endl;
+    std::cout << "OK." << std::endl;
+    std::cout << "ƒCƒ“ƒXƒg[ƒ‹‚ªŠ®—¹‚µ‚Ü‚µ‚½!" << std::endl;
+    std::cout << "InstallCompiler.exe ‚ðŽÀs‚µ‚ÄŠÂ‹«‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+    std::cout << "‚±‚ÌƒvƒƒOƒ‰ƒ€‚ðI—¹‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
     std::string buffer;
-    std::cin >>  buffer;
+    std::cin >> buffer;
     return 0;
 }
