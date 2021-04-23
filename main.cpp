@@ -14,6 +14,5 @@ int main(void){
     std::cout << "enterキーを押すと終了します" << std::endl;
     std::string buffer;
     std::cin >>  buffer;
-    exit(0);
     return 0;
 }
